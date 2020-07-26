@@ -12,20 +12,21 @@ public class MainClass {
         List<String> list2 = Arrays.asList("jun", "jul", "aug", "sep", "oct","Nov");
 
         LinklistClass stack = new LinklistClass(list1.size() + list2.size());
-//        for(int i = 0; i<list1.size(); i--) {
-//            for (String k : list1) {
-//                stack.push1(k);
-//             //   System.out.println("stack : " + k);
-//            }
-//            System.out.println("Popping element from the first stack : " + stack.pop1());
-//
-//        }
-        for(int i = 0; i<list2.size(); i--) {
-            for (String j : list2) {
+        for(int i = 0; i<list1.size(); i--) {
+            for (String k : list1) {
+                stack.push1(k);
+             //   System.out.println("stack : " + k);
+            }
+            System.out.println("Popping element from the first stack : " + stack.pop1());
+
+        }
+        for(int i = 0; i<list2.size(); i++){
+            for(String j : list2){
                 stack.push2(j);
-                System.out.println("stack : " + j);
+              //  System.out.println("stack : " + j);
             }
             System.out.println("Popping element from the first stack on push2 method : " + stack.pop2());
-        }
+}
+        System.out.println(list1.size() + list2.size());
     }
 }
