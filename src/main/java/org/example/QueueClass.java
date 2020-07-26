@@ -9,7 +9,7 @@ public class QueueClass {
     public void enqueue(String e)
     {
 
-        stack1.push(e);
+        stack1.push(e);//pushing elements to
         System.out.println(stack1);
     }
 
@@ -33,14 +33,13 @@ public class QueueClass {
             {
                 stack2.push(stack1.pop());
                 System.out.println(stack2);
-                System.out.println(stack2 + " " +  stack1);
             }
         }
         return stack2.peek();
     }
 
     public Boolean isEmpty(){
-        return stack1.isEmpty() && stack2.isEmpty();//return true
+        return stack1.isEmpty() && stack2.isEmpty();//return true if the stacks are empty
     }
 
     public int size(){
