@@ -6,8 +6,6 @@ public class QueueClass {
     Stack<String> stack1 = new Stack();
     Stack<String> stack2 = new Stack();
 
-
-
     public void enqueue(String e)
     {
 
@@ -35,14 +33,14 @@ public class QueueClass {
             {
                 stack2.push(stack1.pop());
                 System.out.println(stack2);
-                System.out.println(stack2 + "" +  stack1);
+                System.out.println(stack2 + " " +  stack1);
             }
         }
         return stack2.peek();
     }
 
     public Boolean isEmpty(){
-        return stack1.isEmpty() && stack2.isEmpty();
+        return stack1.isEmpty() && stack2.isEmpty();//return true
     }
 
     public int size(){

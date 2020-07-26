@@ -11,9 +11,19 @@ public class QueueMain {
        list.enqueue("Blue");
 
         list.dequeue();
+        list.enqueue("Yellow");
+        list.enqueue("Pink");
+        list.enqueue("maroon");
+        list.dequeue();
         list.isEmpty();
         list.size();
         list.front();
+
+        for(int i = 0; i<list.size(); i++){
+            System.out.println("The list is: " + list.size() + " "  +list.isEmpty()+ " "+
+                    list.dequeue());
+        }
+
     }
 
 }
